@@ -1,3 +1,14 @@
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ * watermark.js - Create watermarked images with Canvas and JS
+ *
+ * Version: 1 (2011-04-04)
+ * Copyright (c) 2011	Patrick Wied ( http://www.patrick-wied.at )
+ * This code is licensed under the terms of the MIT LICENSE
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ */
+
 (function(w){
 	var wm = (function(w){
 		var doc = w.document,
@@ -7,7 +18,7 @@
 		className = "watermark",
 		watermark = false,
 		watermarkPosition = "bottom-right",
-		watermarkPath = "https://lh3.googleusercontent.com/-y6L1sxLDUYQ/VW3CSp1UzrI/AAAAAAAAfrA/W4VXIhN8f-0/s250/forkeratea%252520watermark%252520250%252520width.png?"+(+(new Date())),
+		watermarkPath = "http://lh3.googleusercontent.com/-y6L1sxLDUYQ/VW3CSp1UzrI/AAAAAAAAfrA/W4VXIhN8f-0/s250/forkeratea%252520watermark%252520250%252520width.png?"+(+(new Date())),
 		opacity = (255/(100/50)), // 50%
 		initCanvas = function(){
 			gcanvas = doc.createElement("canvas");
